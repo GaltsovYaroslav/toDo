@@ -1,8 +1,32 @@
 <!DOCTYPE html>
-
 <html>
 <head>
+    <meta charset="UTF-8">
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>toDo</title>
 </head>
 <body>
+    <div class="main-container">
+        <h1>ToDo List</h1>  
+        <div class="block-add-task">
+            <input type="text" id="description-task">
+            <button id="add-task">
+                <span class="add-task__plus">+</span>
+            </button>
+        </div>
+        <h2>Задачи :</h2>
+        <div class="selector-task">
+            <button id="all">All</button>
+            <button id="act">Activ</button>           <!-- ДЛЯ КНОПОК НЕ ПРИМЕНЯЕТСЯ СТИЛЬ button :focus -->
+            <button id="comp">Completed</button>
+        </div>
+        <ol class="todo-list">
+            <!-- Контент -->
+        </ol>
+        <script src="./script.js"></script>
+    </div>
 </body>
 </html>

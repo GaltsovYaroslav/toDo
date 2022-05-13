@@ -1,0 +1,175 @@
+body {
+  width: 1440px;
+  height: 2000px;
+  background: #35343c;
+}
+
+.main-container {
+  position: relative;
+  width: 1340px;
+  height: 2000px;
+  left: 30px;
+  background: #35343c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #7dabf6;
+  margin: 30px 0px 10px 0px;
+}
+
+.block-add-task {
+  width: 464px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#description-task {
+  width: 400px;
+  height: 40px;
+  background: #444c63;
+  border: none;
+  border-radius: 30px;
+}
+
+input {
+  font-size: 20px;
+  color: white;
+}
+
+#add-task {
+  width: 50px;
+  height: 50px;
+  background: #7dabf6;;
+  border: none;
+  border-radius: 30px;
+}
+
+.add-task__plus{  
+  position: relative;
+  top: -3px;
+  left: 0px;
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 111%;
+}
+
+button {
+  background: #444c63;
+}
+
+h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  color: #7dabf6;
+  margin: 0;
+}
+
+.selector-task {
+  cursor: pointer;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#all {
+  width: 115px;
+  height: 30px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+
+#act {
+  width: 115px;
+  height: 30px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+
+#comp {
+  width: 115px;
+  height: 30px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+
+.todo-list {
+  width: fit-content;
+  height: fit-content;
+}
+
+.todo-item {
+  width: 400px;
+  height: 25px;
+  margin: 5px 0px 50px 0px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.todo-item.checked {
+  width: 400px;
+  height: 25px;
+  margin: 5px 0px 50px 0px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: line-through solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.description {
+  width: 400px;
+  height: 25px;
+  text-overflow: ellipsis;
+}
+
+.task-line {
+  position: relative;
+  width: 589.8px;
+  height: 0;
+  top: 4.5 px;
+  left: -32px;
+  border: 1px solid #7dabf6;;
+}
+
+.button-delete {
+  width: 80px;
+  height: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  border-radius: 20px;
+}

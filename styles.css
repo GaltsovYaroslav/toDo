@@ -59,7 +59,7 @@ input {
 
 .add-task__plus{  
   position: relative;
-  top: -2px;
+  top: -3px;
   left: 0px;
   color: white;
   font-weight: 800;
@@ -69,10 +69,6 @@ input {
 
 button {
   background: #444c63;
-}
-
-button :focus {
-  background: #7dabf6;
 }
 
 h2 {
@@ -86,6 +82,7 @@ h2 {
 }
 
 .selector-task {
+  cursor: pointer;
   width: 400px;
   height: 40px;
   display: flex;
@@ -94,7 +91,7 @@ h2 {
   align-items: center;
 }
 
-.stb-all {
+#all {
   width: 115px;
   height: 30px;
   padding: 5px 10px 5px 10px;
@@ -103,13 +100,9 @@ h2 {
   font-size: 17px;
   font-weight: 600;
   color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
-.stb-act {
+#act {
   width: 115px;
   height: 30px;
   padding: 5px 10px 5px 10px;
@@ -118,13 +111,9 @@ h2 {
   font-size: 17px;
   font-weight: 600;
   color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
-.stb-comp {
+#comp {
   width: 115px;
   height: 30px;
   padding: 5px 10px 5px 10px;
@@ -133,17 +122,12 @@ h2 {
   font-size: 17px;
   font-weight: 600;
   color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
-.todo-task {
+.todo-list {
   width: fit-content;
   height: fit-content;
 }
-
 
 .todo-item {
   width: 400px;
@@ -165,25 +149,27 @@ h2 {
 }
 
 .description {
-  position: relative;
-  width: 300px;
+  width: 400px;
   height: 25px;
-  top: 0;
-  left: 0;
-  text-overflow:clip; /* ellipsis; */
+  text-overflow: ellipsis;
 }
 
-/* .button-complete {
-
-} */
+.task-line {
+  position: relative;
+  width: 589.8px;
+  height: 0;
+  top: 4.5 px;
+  left: -32px;
+  border: 1px solid #7dabf6;;
+}
 
 .button-delete {
   width: 80px;
-  height: 39px;
+  height: 30px;
   font-size: 17px;
   font-weight: 600;
   color: white;
-  padding: 10px 10px;
+  padding: 5px 10px 5px 10px;
   border: none;
   border-radius: 20px;
 }
